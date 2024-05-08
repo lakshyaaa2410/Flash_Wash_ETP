@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#51829B"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#51829B"
+        android:padding="60dp">
+
+        <!-- Profile Picture -->
+        <ImageView
+            android:id="@+id/profilePicImageView"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/user"
+            android:scaleType="centerInside"
+            android:elevation="8dp"
+            android:layout_marginTop="16dp" />
+        <RatingBar
+            android:id="@+id/ratingsRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:layout_centerHorizontal="true"
+            android:progressBackgroundTint="#4d5056"
+            android:layout_below="@id/profilePicImageView"
+            android:progressTint="#fff"
+            android:rating="3"
+            android:scaleX=".6"
+            android:scaleY=".6" />
+
+        <!-- Full Name -->
+        <TextView
+            android:id="@+id/fullNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ratingsRatingBar"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Full Name"
+            android:textSize="52sp"
+            android:textStyle="bold"
+            android:textColor="#F6995C"
+            android:layout_marginTop="16dp" />
+
+        <!-- Specialization -->
+        <TextView
+            android:id="@+id/specializationTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fullNameTextView"
+            android:layout_centerHorizontal="true"
+            android:text="Specialization"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_marginTop="15dp" />
+
+        <!-- Years of Experience -->
+        <TextView
+            android:id="@+id/yearsOfExperienceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/specializationTextView"
+            android:layout_centerHorizontal="true"
+            android:text="Years of Experience: 5"
+            android:textSize="20dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:layout_marginTop="15dp" />
+
+        <!-- Bio -->
+        <TextView
+            android:id="@+id/bioTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/yearsOfExperienceTextView"
+            android:text="Bio"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:layout_marginTop="20dp" />
+
+
+        <!-- Contact Section -->
+        <LinearLayout
+            android:id="@+id/contactSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bioTextView"
+            android:orientation="vertical"
+            android:layout_marginTop="32dp">
+
+            <!-- Email -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/emailLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/baseline_email_24"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="center"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:id="@+id/emailTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Satyam8804378323@gmail.com"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <!-- Phone -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:id="@+id/phoneLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/baseline_phone_24"
+                    android:drawableTint="#76ABAE"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/phoneTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:text="+91-6207621814"
+                    android:textStyle="bold"
+                    android:textColor="#000" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Button: Book Appointment -->
+        <Button
+            android:id="@+id/bookAppointmentButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/contactSection"
+            android:text="Book Appointment"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:backgroundTint="#F6995C"
+            android:layout_marginTop="52dp" />
+
+        <!-- Button: Get Directions -->
+        <Button
+            android:id="@+id/getDirectionsButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/bookAppointmentButton"
+            android:text="Get Directions"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:backgroundTint="#EADFB4"
+            android:layout_marginTop="20dp" />
+
+    </RelativeLayout>
+</ScrollView>

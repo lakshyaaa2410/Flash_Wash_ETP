@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#9BB0C1"
+    android:padding="15dp">
+
+    <TextView
+        android:id="@+id/washerDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:text="Washer's Details"
+        android:textColor="#000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:shadowColor="#fff"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="4"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/c1"
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:layout_marginBottom="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="#F6995C">
+
+            <!-- User's Image -->
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                app:civ_border_color="#fff"
+                android:elevation="3dp"
+                app:civ_border_width="3dp"
+                android:padding="5dp"
+                android:src="@drawable/user" />
+
+            <TextView
+                android:id="@+id/nameValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="32dp"
+                android:textStyle="bold"
+                android:text="Your Name"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_below="@id/profile" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <!-- Specialization -->
+    <TextView
+        android:id="@+id/specializationLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Specialization: "
+        android:textColor="#2b2d30"
+        android:layout_below="@id/c1"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/specializationValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="Your Specialization"
+        android:textColor="#2b2d30"
+        android:layout_toEndOf="@id/specializationLabelTextView"
+        android:layout_alignBaseline="@id/specializationLabelTextView"/>
+
+    <!-- License Number -->
+    <TextView
+        android:id="@+id/licenseNumberLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pricing: "
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textColor="#2b2d30"
+        android:layout_below="@id/specializationLabelTextView"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/licenseNumberValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:text="12018969"
+        android:textColor="#2b2d30"
+        android:layout_toEndOf="@id/licenseNumberLabelTextView"
+        android:layout_alignBaseline="@id/licenseNumberLabelTextView"/>
+
+    <!-- Location -->
+    <TextView
+        android:id="@+id/experienceLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Experience: "
+        android:textColor="#2b2d30"
+        android:layout_below="@id/licenseNumberLabelTextView"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/experienceValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#2b2d30"
+        android:text="5 Years"
+        android:layout_marginTop="8dp"
+
+        android:layout_toEndOf="@id/experienceLabelTextView"
+        android:layout_below="@id/licenseNumberValueTextView"/>
+    <!-- About -->
+    <TextView
+        android:id="@+id/aboutLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="About: "
+        android:textColor="#2b2d30"
+        android:layout_below="@id/experienceLabelTextView"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/aboutValueTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Your Bio"
+        android:textColor="@color/black"
+        android:layout_below="@id/aboutLabelTextView"
+        android:layout_marginTop="4dp"
+
+        android:paddingEnd="4dp"/>
+
+    <!-- Cases Won -->
+    <TextView
+        android:id="@+id/casesWonLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="License Number: "
+        android:textColor="#2b2d30"
+        android:layout_below="@id/aboutValueTextView"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/casesWonValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#2b2d30"
+        android:layout_toEndOf="@id/casesWonLabelTextView"
+        android:layout_alignBaseline="@id/casesWonLabelTextView"/>
+
+    <!-- Rating -->
+    <TextView
+        android:id="@+id/ratingLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Rating: "
+        android:textColor="#2b2d30"
+        android:layout_below="@id/casesWonValueTextView"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/ratingValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#2b2d30"
+        android:layout_toEndOf="@id/ratingLabelTextView"
+        android:layout_alignBaseline="@id/ratingLabelTextView"/>
+
+    <!-- Location -->
+    <TextView
+        android:id="@+id/locationLabelTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="Location: "
+        android:textColor="#2b2d30"
+        android:layout_below="@id/ratingValueTextView"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/locationValueTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#2b2d30"
+        android:layout_toEndOf="@id/locationLabelTextView"
+        android:layout_alignBaseline="@id/locationLabelTextView"/>
+
+    <Button
+        android:id="@+id/updateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit Profile"
+        android:textSize="20dp"
+        android:backgroundTint="#F6995C"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>

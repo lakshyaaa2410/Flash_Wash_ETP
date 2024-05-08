@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "887577800393",
+    "project_id": "flash-wash-edb5d",
+    "storage_bucket": "flash-wash-edb5d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:887577800393:android:ab998aca4b610709262718",
+        "android_client_info": {
+          "package_name": "com.example.locatemyadvocate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqunp5Wu9cBJHEH2-ScwnH54Bv3_5ybGk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

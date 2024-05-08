@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#496989"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".SignUp">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        app:srcCompat="@drawable/new_logo_1" />
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="52sp"
+        android:padding="10dp"
+        android:textColor="#F6995C"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:text="Flash Wash"
+        android:shadowColor="#000000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="10"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="italic"
+        android:textSize="22sp"
+        android:padding="10dp"
+        android:textColor="#fff"
+        android:gravity="center"
+        android:fontFamily="serif"
+        android:text="One Stop Car Wash Solution"
+        android:shadowColor="#000000"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="10"
+        android:layout_marginBottom="20dp"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:elevation="4dp"
+        app:cardCornerRadius="20dp"
+        android:backgroundTint="#222831"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:orientation="vertical">
+
+            <!-- Email Field Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Your Email"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Email Field -->
+            <EditText
+                android:id="@+id/emailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColorHint="#b8b6b6"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_edittext"
+                android:padding="15dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Password Field Label -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enter Your Password"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Password Field -->
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:background="@drawable/custom_edittext"
+                android:padding="15dp"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColorHint="#b8b6b6"
+                android:textColor="@color/white"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Login Button -->
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="#F9B572"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textColor="#000"
+                android:text="Login"/>
+
+            <!-- Signup Text -->
+            <TextView
+                android:id="@+id/signupText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#EADFB4"
+                android:clickable="true"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:text="New Here? Register"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

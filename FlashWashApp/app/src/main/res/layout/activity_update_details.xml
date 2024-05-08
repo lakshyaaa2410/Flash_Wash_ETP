@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#496989">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="50dp"
+            android:text="Update Details"
+            android:textSize="45sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#EADFB4"
+            android:shadowColor="#80000000"
+            android:shadowDx="4"
+            android:shadowDy="4"
+            android:shadowRadius="4" />
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            app:civ_border_color="#fff"
+            android:elevation="3dp"
+            app:civ_border_width="3dp"
+            android:padding="5dp"
+            android:src="@drawable/baseline_man_2_24" />
+
+        <!-- Name -->
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Enter Your Name:"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#F6995C" />
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:textSize="20dp"
+            android:textColor="@color/white" />
+
+        <!-- Specialization -->
+        <TextView
+            android:id="@+id/specializationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Enter Your Specialization"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#F6995C" />
+
+        <EditText
+            android:id="@+id/specializationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Specialization"
+            android:textSize="20dp"
+            android:textColor="@color/white" />
+
+        <!-- License Number -->
+        <TextView
+            android:id="@+id/licenseNumberTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Enter Pricing"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#F6995C" />
+
+        <EditText
+            android:id="@+id/licenseNumberEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Pricing"
+            android:textSize="20dp"
+            android:textColor="@color/white" />
+
+        <!-- About -->
+        <TextView
+            android:id="@+id/aboutTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="5dp"
+            android:text="Enter Your Description"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#F6995C" />
+
+        <EditText
+            android:id="@+id/aboutEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Description"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:minLines="2" />
+
+        <!-- Cases Won -->
+        <TextView
+            android:id="@+id/casesWonTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:text="Enter Your License Number"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#F6995C" />
+
+        <EditText
+            android:id="@+id/casesWonEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="License Number"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:inputType="number" />
+
+        <!-- Experience -->
+        <TextView
+            android:id="@+id/experienceTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="10dp"
+            android:text="Enter Your Years Of Experience"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="#F6995C" />
+
+        <EditText
+            android:id="@+id/experienceEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Experience"
+            android:textSize="18sp"
+            android:textColor="@color/white" />
+
+        <!-- Location -->
+        <TextView
+            android:id="@+id/locationTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:layout_marginBottom="10dp"
+            android:text="Enter Your Location"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="#F6995C" />
+
+        <EditText
+            android:id="@+id/locationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Location"
+            android:textSize="18sp"
+            android:textColor="@color/white" />
+
+        <!-- Update Button -->
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="Update Details"
+            android:textColor="#000"
+            android:backgroundTint="#F6995C" />
+
+    </LinearLayout>
+</ScrollView>

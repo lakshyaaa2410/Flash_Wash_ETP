@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="38dp"
+    android:backgroundTint="#EADFB4"
+    app:cardCornerRadius="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:gravity="center">
+
+        <!-- Status -->
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Status"
+            android:textSize="25sp"
+            android:paddingBottom="10dp"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Date"
+            android:textColor="@color/black"
+            android:paddingBottom="10dp"
+            android:textSize="20sp" />
+
+
+        <TextView
+            android:id="@+id/advocateNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Washer's Name"
+            android:textColor="@color/black"
+            android:paddingBottom="10dp"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/advocateContactTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Washer's Number"
+            android:textColor="@color/black"
+            android:paddingBottom="20dp"
+            android:textSize="20dp" />
+
+        <!-- Button: Cancel Appointment -->
+        <Button
+            android:id="@+id/cancelAppointmentButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel Appointment"
+            android:backgroundTint="#000"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
